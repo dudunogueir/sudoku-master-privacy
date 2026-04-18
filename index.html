@@ -66,14 +66,6 @@
       margin: 1.25rem 0;
     }
     .highlight p { color: #065f46; margin-bottom: 0; }
-    .warning {
-      background: #fffbeb;
-      border: 1px solid #fde68a;
-      border-radius: 8px;
-      padding: 1rem 1.25rem;
-      margin: 1.25rem 0;
-    }
-    .warning p { color: #92400e; margin-bottom: 0; }
     a { color: #10b981; text-decoration: none; }
     a:hover { text-decoration: underline; }
     footer {
@@ -100,6 +92,15 @@
       font-weight: 600;
       color: #0f172a;
     }
+    .company-info {
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 8px;
+      padding: 1rem 1.25rem;
+      margin: 1rem 0;
+      font-size: 0.9rem;
+    }
+    .company-info p { margin-bottom: 0.25rem; }
   </style>
 </head>
 <body>
@@ -107,15 +108,22 @@
     <header>
       <p class="app-name">Sudoku Master</p>
       <h1>Politica de Privacidade</h1>
-      <p class="date">Data de vigencia: 7 de abril de 2026</p>
+      <p class="date">Versao 3.0 — Data de vigencia: 18 de abril de 2026</p>
     </header>
 
     <div class="highlight">
-      <p><strong>Resumo:</strong> O Sudoku Master armazena seu progresso de jogo localmente no dispositivo. Utilizamos servicos de terceiros (Google AdMob, Firebase Analytics e RevenueCat) que podem coletar dados anonimos para exibicao de anuncios, analise de uso e processamento de compras. Nao coletamos dados pessoais identificaveis diretamente.</p>
+      <p><strong>Resumo:</strong> O Sudoku Master e um aplicativo 100% gratuito que armazena seu progresso de jogo exclusivamente no seu proprio dispositivo. Nao exibimos anuncios, nao oferecemos compras dentro do aplicativo e nao coletamos dados pessoais identificaveis. Utilizamos apenas o Firebase Analytics para compreender padroes anonimos de uso do app.</p>
     </div>
 
     <h2>1. Introducao</h2>
-    <p>Esta Politica de Privacidade descreve como o aplicativo <strong>Sudoku Master</strong> ("nos", "nosso" ou "aplicativo"), desenvolvido pela <strong>Codeenn</strong>, trata as informacoes dos usuarios. Ao utilizar o aplicativo, voce concorda com as praticas descritas neste documento.</p>
+    <p>Esta Politica de Privacidade descreve como o aplicativo <strong>Sudoku Master</strong> ("nos", "nosso" ou "aplicativo") trata as informacoes dos usuarios. Ao utilizar o aplicativo, voce concorda com as praticas descritas neste documento.</p>
+
+    <div class="company-info">
+      <p><strong>Controlador dos Dados:</strong></p>
+      <p>DESENVOLVIMENTO E CONSULTORIA EM TI ENN LTDA</p>
+      <p>CNPJ: 63.721.800/0001-11</p>
+      <p>E-mail: <a href="mailto:contato@codeenn.com">contato@codeenn.com</a></p>
+    </div>
 
     <h2>2. Dados Armazenados Localmente</h2>
     <p>O aplicativo armazena dados exclusivamente no seu dispositivo (via armazenamento interno do app) para garantir o funcionamento do jogo. Esses dados incluem:</p>
@@ -124,15 +132,14 @@
       <li><strong>Melhores tempos:</strong> recordes pessoais por nivel de dificuldade.</li>
       <li><strong>Sequencia diaria (streak):</strong> contagem de dias consecutivos jogados.</li>
       <li><strong>Preferencias:</strong> configuracoes de tema (claro/escuro) e sons.</li>
-      <li><strong>Status de assinatura:</strong> indicador local de compra Premium.</li>
-      <li><strong>Contagem de dicas:</strong> numero de dicas utilizadas no dia.</li>
+      <li><strong>Estatisticas locais:</strong> numero de partidas jogadas e concluidas.</li>
     </ul>
     <div class="highlight">
-      <p>Esses dados sao armazenados localmente e <strong>nao sao transmitidos</strong> para nossos servidores. Contudo, servicos de terceiros integrados ao app podem coletar dados conforme descrito abaixo.</p>
+      <p>Esses dados sao armazenados localmente e <strong>nao sao transmitidos</strong> para nossos servidores. Voce pode apaga-los a qualquer momento desinstalando o aplicativo ou limpando os dados do app nas configuracoes do seu dispositivo.</p>
     </div>
 
     <h2>3. Servicos de Terceiros</h2>
-    <p>O Sudoku Master utiliza os seguintes servicos de terceiros, que podem coletar e processar dados de acordo com suas proprias politicas de privacidade:</p>
+    <p>O Sudoku Master utiliza apenas um servico de terceiros para analise anonima de uso:</p>
 
     <table>
       <tr>
@@ -141,91 +148,81 @@
         <th>Dados Coletados</th>
       </tr>
       <tr>
-        <td><strong>Google AdMob</strong></td>
-        <td>Exibicao de anuncios (intersticiais e recompensados) para usuarios da versao gratuita</td>
-        <td>Identificador de publicidade do dispositivo, dados de interacao com anuncios, informacoes tecnicas do dispositivo (modelo, SO, idioma)</td>
-      </tr>
-      <tr>
-        <td><strong>Firebase Analytics</strong></td>
+        <td><strong>Firebase Analytics</strong> (Google)</td>
         <td>Analise anonima de uso do aplicativo para melhoria da experiencia</td>
-        <td>Eventos de uso anonimos (ex.: nivel jogado, tempo de sessao), informacoes tecnicas do dispositivo</td>
-      </tr>
-      <tr>
-        <td><strong>RevenueCat</strong></td>
-        <td>Gerenciamento de compras in-app (Premium) e verificacao de assinatura</td>
-        <td>Identificador anonimo de usuario, historico de compras via Google Play, status de entitlement</td>
+        <td>Eventos de uso anonimos (ex.: nivel jogado, tempo de sessao), informacoes tecnicas do dispositivo (modelo, SO, idioma), identificador anonimo de instalacao do app</td>
       </tr>
     </table>
 
-    <div class="warning">
-      <p><strong>Importante:</strong> Usuarios Premium nao visualizam anuncios, portanto o Google AdMob nao coleta dados de publicidade de usuarios Premium.</p>
+    <p>Para mais informacoes sobre como o Firebase Analytics trata os dados, consulte a <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Politica de Privacidade do Google</a>.</p>
+
+    <div class="highlight">
+      <p><strong>O Sudoku Master NAO utiliza:</strong> anuncios publicitarios, identificador de publicidade (Advertising ID), compras dentro do aplicativo, sistemas de assinatura, cookies de rastreamento ou qualquer forma de monetizacao paga.</p>
     </div>
 
-    <p>Para mais informacoes sobre como esses servicos tratam seus dados, consulte:</p>
-    <ul>
-      <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Politica de Privacidade do Google</a> (AdMob e Firebase)</li>
-      <li><a href="https://www.revenuecat.com/privacy/" target="_blank" rel="noopener">Politica de Privacidade da RevenueCat</a></li>
-    </ul>
-
     <h2>4. Dados Pessoais</h2>
-    <p>O Sudoku Master <strong>nao coleta diretamente</strong> nenhum dado pessoal identificavel dos usuarios. Especificamente:</p>
+    <p>O Sudoku Master <strong>nao coleta</strong> nenhum dado pessoal identificavel dos usuarios. Especificamente:</p>
     <ul>
       <li>Nao coletamos nome, e-mail, telefone ou qualquer informacao de identificacao pessoal.</li>
-      <li>Nao coletamos dados de localizacao precisa.</li>
-      <li>Nao acessamos camera, microfone, contatos ou outros dados do dispositivo.</li>
+      <li>Nao coletamos dados de localizacao (precisa ou aproximada).</li>
+      <li>Nao acessamos camera, microfone, contatos, galeria ou outros dados sensiveis do dispositivo.</li>
       <li>Nao criamos perfis de usuario identificaveis.</li>
+      <li>Nao utilizamos identificador de publicidade (Advertising ID).</li>
+      <li>Nao utilizamos rastreamento cross-app.</li>
     </ul>
 
     <h2>5. Publicidade</h2>
-    <p>O Sudoku Master exibe anuncios para usuarios da versao gratuita por meio do Google AdMob. Os anuncios exibidos sao:</p>
-    <ul>
-      <li><strong>Anuncios intersticiais:</strong> exibidos entre partidas ou apos eventos especificos do jogo.</li>
-      <li><strong>Anuncios recompensados:</strong> assistidos voluntariamente pelo usuario em troca de dicas extras.</li>
-    </ul>
-    <p>O Google AdMob pode utilizar o identificador de publicidade do seu dispositivo para exibir anuncios relevantes. Voce pode redefinir ou desativar o identificador de publicidade nas configuracoes do seu dispositivo Android (Configuracoes &gt; Google &gt; Anuncios).</p>
+    <p>O Sudoku Master <strong>nao exibe anuncios</strong> de nenhum tipo. O aplicativo e inteiramente gratuito e livre de publicidade.</p>
 
     <h2>6. Compras In-App</h2>
-    <p>O aplicativo oferece uma compra unica (Premium) processada pela Google Play Store e gerenciada pelo RevenueCat. O processamento do pagamento e realizado inteiramente pela Google Play — nos nao temos acesso a dados de pagamento como numero de cartao de credito.</p>
+    <p>O Sudoku Master <strong>nao possui compras dentro do aplicativo</strong>. Todas as funcionalidades do jogo estao disponiveis gratuitamente para todos os usuarios, sem limitacoes ou conteudos pagos.</p>
 
     <h2>7. Como os Dados sao Usados</h2>
-    <p>Os dados coletados pelos servicos de terceiros sao utilizados para:</p>
+    <p>Os dados anonimos coletados pelo Firebase Analytics sao utilizados exclusivamente para:</p>
     <ul>
-      <li>Exibir anuncios e financiar a versao gratuita do aplicativo.</li>
-      <li>Analisar o uso do app de forma agregada para melhorar a experiencia.</li>
-      <li>Processar e verificar compras Premium.</li>
+      <li>Compreender padroes agregados de uso do aplicativo.</li>
+      <li>Identificar bugs ou problemas de performance.</li>
+      <li>Melhorar a experiencia do usuario e priorizar futuras funcionalidades.</li>
     </ul>
+    <p>Esses dados sao <strong>agregados e anonimizados</strong>, nao permitindo identificacao individual dos usuarios.</p>
 
     <h2>8. Compartilhamento de Dados</h2>
-    <p>Nos <strong>nao vendemos, transferimos ou compartilhamos</strong> dados pessoais dos usuarios com terceiros para fins proprios. Os dados coletados pelos servicos integrados (AdMob, Firebase, RevenueCat) sao processados exclusivamente para as finalidades descritas nesta politica e de acordo com as politicas de privacidade de cada servico.</p>
+    <p>Nos <strong>nao vendemos, transferimos ou compartilhamos</strong> dados pessoais dos usuarios com terceiros. Os dados anonimos coletados pelo Firebase Analytics sao processados exclusivamente para as finalidades descritas nesta politica, conforme a politica de privacidade do Google.</p>
 
     <h2>9. Seguranca</h2>
-    <p>Adotamos medidas razoaveis para proteger as informacoes dos usuarios. Os dados armazenados localmente estao protegidos pelos mecanismos de seguranca do seu dispositivo e sistema operacional. A comunicacao com servicos de terceiros utiliza criptografia HTTPS/TLS.</p>
+    <p>Adotamos medidas razoaveis para proteger as informacoes dos usuarios. Os dados armazenados localmente estao protegidos pelos mecanismos de seguranca do seu dispositivo e sistema operacional. A comunicacao com o Firebase Analytics utiliza criptografia HTTPS/TLS.</p>
 
     <h2>10. Criancas</h2>
-    <p>O Sudoku Master e adequado para todas as idades. Nao coletamos conscientemente dados pessoais de criancas menores de 13 anos. Os anuncios exibidos pelo Google AdMob seguem as diretrizes de conteudo para todas as idades. O aplicativo esta em conformidade com a Lei Geral de Protecao de Dados (LGPD) e o Children's Online Privacy Protection Act (COPPA).</p>
+    <p>O Sudoku Master e adequado para todas as idades. Nao coletamos conscientemente dados pessoais de criancas menores de 13 anos. O aplicativo esta em conformidade com a Lei Geral de Protecao de Dados (LGPD) e o Children's Online Privacy Protection Act (COPPA).</p>
 
     <h2>11. Direitos do Usuario (LGPD)</h2>
     <p>Em conformidade com a Lei Geral de Protecao de Dados (Lei 13.709/2018), voce tem os seguintes direitos:</p>
     <ul>
       <li><strong>Acesso:</strong> os dados locais estao no seu dispositivo e podem ser visualizados dentro do app.</li>
-      <li><strong>Exclusao:</strong> voce pode apagar todos os dados locais desinstalando o app ou limpando os dados nas configuracoes do dispositivo.</li>
-      <li><strong>Identificador de publicidade:</strong> voce pode redefinir ou desativar o identificador de publicidade nas configuracoes do Android.</li>
-      <li><strong>Opt-out de analytics:</strong> voce pode desativar o compartilhamento de dados analiticos nas configuracoes do seu dispositivo.</li>
-      <li><strong>Oposicao:</strong> para solicitar informacoes sobre dados processados por terceiros ou exercer outros direitos, entre em contato pelo e-mail abaixo.</li>
+      <li><strong>Exclusao:</strong> voce pode apagar todos os dados locais desinstalando o app ou limpando os dados nas configuracoes do dispositivo (Configuracoes &gt; Apps &gt; Sudoku Master &gt; Armazenamento &gt; Limpar dados).</li>
+      <li><strong>Portabilidade:</strong> os dados armazenados localmente podem ser acessados atraves de ferramentas padrao do Android. Voce tambem pode solicitar uma copia enviando e-mail para <a href="mailto:contato@codeenn.com">contato@codeenn.com</a>.</li>
+      <li><strong>Opt-out de analytics:</strong> voce pode desativar o compartilhamento de dados de analise anonima nas configuracoes do seu dispositivo ou no primeiro acesso ao app (dialogo de consentimento LGPD).</li>
+      <li><strong>Revogacao de consentimento:</strong> voce pode revogar o consentimento para coleta de dados analiticos a qualquer momento, entrando em contato pelo e-mail informado.</li>
+      <li><strong>Informacao:</strong> para solicitar informacoes sobre dados processados ou exercer outros direitos previstos na LGPD, entre em contato pelo e-mail abaixo.</li>
     </ul>
 
-    <h2>12. Alteracoes nesta Politica</h2>
+    <h2>12. Base Legal (LGPD)</h2>
+    <p>O tratamento de dados anonimos pelo Firebase Analytics e realizado com base no legitimo interesse do controlador (art. 7, IX da LGPD) para melhoria continua do aplicativo, respeitadas as expectativas legitimas e os direitos fundamentais dos titulares. O consentimento explicito e solicitado no primeiro acesso ao app.</p>
+
+    <h2>13. Alteracoes nesta Politica</h2>
     <p>Podemos atualizar esta Politica de Privacidade ocasionalmente. Alteracoes significativas serao comunicadas por meio de uma atualizacao do aplicativo. A data de vigencia no topo deste documento indica quando a ultima atualizacao foi realizada. Recomendamos revisar esta pagina periodicamente.</p>
 
-    <h2>13. Contato do Desenvolvedor</h2>
+    <h2>14. Contato</h2>
     <p>Se voce tiver duvidas, sugestoes ou preocupacoes sobre esta Politica de Privacidade, ou desejar exercer seus direitos previstos na LGPD, entre em contato:</p>
     <ul>
-      <li><strong>Desenvolvedor:</strong> Codeenn</li>
-      <li><strong>E-mail:</strong> <a href="mailto:contato@codeenn.com">contato@codeenn.com</a></li>
+      <li><strong>Razao Social:</strong> DESENVOLVIMENTO E CONSULTORIA EM TI ENN LTDA</li>
+      <li><strong>CNPJ:</strong> 63.721.800/0001-11</li>
+      <li><strong>E-mail (DPO):</strong> <a href="mailto:contato@codeenn.com">contato@codeenn.com</a></li>
     </ul>
 
     <footer>
-      <p>&copy; 2026 Sudoku Master — Codeenn. Todos os direitos reservados.</p>
+      <p>&copy; 2026 Sudoku Master — DESENVOLVIMENTO E CONSULTORIA EM TI ENN LTDA. Todos os direitos reservados.</p>
+      <p style="margin-top: 0.5rem;">Politica de Privacidade v3.0 — 18 de abril de 2026</p>
     </footer>
   </div>
 </body>
